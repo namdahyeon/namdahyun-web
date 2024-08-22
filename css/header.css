@@ -1,0 +1,28 @@
+@font-face { font-family:AppleSD_EB; src:url('../font/AppleSDGothicNeoEB.ttf'); }
+@font-face { font-family:AppleSD_B; src:url('../font/AppleSDGothicNeoB.ttf'); }
+@font-face { font-family:AppleSD_SB; src:url('../font/AppleSDGothicNeoSB.ttf'); }
+@font-face { font-family:AppleSD_M; src:url('../font/AppleSDGothicNeoM.ttf'); }
+@font-face { font-family:AppleSD_L; src:url('../font/AppleSDGothicNeoL.ttf'); }
+
+/* header */
+header { z-index:100; position:fixed; display:block; left:0; top:0; width:100%; box-sizing:border-box; padding:0 70px; mix-blend-mode:difference; }
+
+/* gnb button */
+.gnb { z-index:97; position:absolute; width:24px; height:25px; margin-top:54px; background:url(../img/menu_icon.svg)no-repeat 0 0; text-indent:-9999px; overflow:hidden; cursor:pointer; }
+
+/* gnb menu list */
+.gnbBox { z-index:95; position:fixed; float:left; padding-top:50px; }
+
+.gnbBox>.dd { position:fixed; left:0px; top:0px; width:60%; overflow:hidden; }
+.gnbBox.view>.dd { height:100%; }
+.gnbBox .gnbWrap { width:0; height:0; transform:translate3d(-50%,-50%,0); margin-left:85px; margin-top:65px; border-radius:50%; background:#6200ee; transition:all .8s ease-out 0s; overflow:hidden; }
+.gnbBox.view .gnbWrap { width:4000px; height:4000px; }
+.gnbBox>.dd ul { position:absolute; left:50%; top:50%; margin-top:35px; margin-left:-15px; opacity:0; transition:opacity .5s ease-out .6s; }
+.gnbBox.view ul { opacity:1; }
+.gnbBox>.dd ul>li { padding-top:40px; font-size:60px; }
+.gnbBox>.dd ul>li>a { color:#3700b3; text-shadow:-3px 0 0 #46FDA9,0px 0 0 #FD2BC5; font-family:'AppleSD_EB'; transition:all .5s ease 0s; }
+.gnbBox>.dd ul>li>a:hover { color:#fff; text-shadow:-6px 0 0 #46FDA9,6px 0 0 #FD2BC5; }
+
+header>h1.logo { position:fixed; display:inline-block; left:50%; width:35px; height:34px; transform:translateX(-50%); margin-top:54px; background:url(../img/DHlogo.png)no-repeat 0 0; text-indent:-9999px; overflow:hidden; cursor:pointer; }
+
+header>span.int { float:right; margin-top:60px; color:#fff; font-size:20px; opacity:.5; }

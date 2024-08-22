@@ -1,0 +1,15 @@
+/* font-family */
+
+
+@font-face { font-family:AppleSD_EB; src:url('../font/AppleSDGothicNeoEB.ttf'); }
+@font-face { font-family:AppleSD_B; src:url('../font/AppleSDGothicNeoB.ttf'); }
+@font-face { font-family:AppleSD_SB; src:url('../font/AppleSDGothicNeoSB.ttf'); }
+@font-face { font-family:AppleSD_M; src:url('../font/AppleSDGothicNeoM.ttf'); }
+@font-face { font-family:AppleSD_R; src:url('../font/AppleSDGothicNeoR.ttf'); }
+@font-face { font-family:AppleSD_L; src:url('../font/AppleSDGothicNeoL.ttf'); }
+
+@font-face { font-family:NotoSans_B; src:url('../font/NotoSans-Bold.ttf'); }
+@font-face { font-family:NotoSans_SB; src:url('../font/NotoSans-SemiBold.ttf'); }
+@font-face { font-family:NotoSans_M; src:url('../font/NotoSans-Medium.ttf'); }
+
+@font-face { font-family:Binggrae; src:url('../font/Binggrae-Bold.ttf'); }

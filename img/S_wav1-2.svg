@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6713.746" height="169.397" viewBox="0 0 6713.746 169.397">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b55c8d" stop-opacity="0.2"/>
+      <stop offset="0.567" stop-color="#b55c8d"/>
+      <stop offset="1" stop-color="#b55c8d"/>
+    </linearGradient>
+  </defs>
+  <path id="패스_155" data-name="패스 155" d="M7347,7533.214v106.744l6713.746-23.311s-253.2-63.664-660.618-83.433c-233.94-11.352-721.622-55.05-1119.436-59.166s-730.914,64.621-1205.854,59.166-855.771-39.346-1226.843-59.166-435.722,50.949-789.642,59.166-684.115-53.4-890.712-35.234-317.031,68.155-520.071,71.809S7347,7533.214,7347,7533.214Z" transform="translate(-7347 -7470.561)" opacity="0.4" fill="url(#linear-gradient)" style="mix-blend-mode: darken;isolation: isolate"/>
+</svg>

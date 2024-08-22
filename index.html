@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portforio for Namdahyeon</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link type="text/css" href="./css/main.css" rel="stylesheet">
+    <link type="text/css" href="./css/subpage.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="./js/main.js" defer></script>
+    <script type="text/javascript" src="./js/subpage.js" defer></script>
+</head>
+<body id="bod">
+    <header>
+        <p class="gnb" onclick="mainMenu();"><a href="#">gnb</a></p>
+        <h1 class="logo">DHlogo</h1>
+        <span class="int">Introduce</span>
+        <img class="blind" src="./img/DH_cover.jpg" alt="DH cover"/>
+    </header>
+    <div id="gnb" class="gnbBox">
+        <div class="dd">
+            <div class="gnbWrap">
+                <ul>
+                    <li onclick="cotc_clese();"><a class="noLk subM1" href="#">Intro</a></li>
+                    <!-- <li onclick="cotc_clese();"><a class="noLk subM2" href="#">Introduce</a></li> -->
+                    <!-- <li onclick="cotc_clese();"><a class="noLk subM3" href="#">Skill</a></li> -->
+                    <li onclick="cotc_clese();"><a class="noLk subM4" href="#">Work list</a></li>
+                    <li onclick="cotc_open();"><a class="noLk subM5" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <div id="splash" class="splash">
+            <div class="pstBox">
+                <span class="progress-text">0%</span>
+                <ul>
+                    <li>card1</li>
+                    <li>card2</li>
+                    <li>card3</li>
+                    <li>card4</li>
+                </ul>
+            </div>
+            <p class="rab"></p>
+            <div id="progress" class="progress">
+                <p class="progress-bar"></p>
+            </div>
+        </div>
+        <div onclick="introClose();" class="cir_wrap">
+            <p class="cir_L1"></p>
+            <p class="cir_L2"></p>
+            <p class="cir_L3"></p>
+            <div id="cr" class="cir"></div>
+        </div>
+        <div id="introM" class="introMovie">
+            <div class="eyes">
+                <div class="eyeL">
+                    <div class="eyes_curv">
+                        <svg id="cateye" class="catE" data-name="cateye" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+                            <path d="M465.821,388.682c10.45-9.87,9.432-4.626,14.368-21.07s15.565,15.031,15.565,15.031v24.9H462Z" transform="translate(-212.813 -167.799)" fill="#79404d"/>
+                            <path id="eye1" fill="#070b1f"/>
+                        </svg>
+                    </div>
+                    <div class="eye">
+                        <p></p>
+                    </div>
+                    <div id="eyeB1" class="eyeB"></div>
+                </div>
+                <div class="eyeR">
+                    <div class="eyes_curv">
+                        <svg id="cateye2" class="catE" data-name="cateye2" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+                            <path d="M491.937,388.682c-10.45-9.87-9.432-4.626-14.368-21.07S462,382.643,462,382.643v24.9h33.75Z" transform="translate(-444.945 -167.799)" fill="#79404d"/>
+                            <path id="eye2" transform="translate(300 300) rotate(180)" fill="#070b1f"/>
+                        </svg>
+                    </div>
+                    <div class="eye">
+                        <p></p>
+                    </div>
+                    <div id="eyeB2" class="eyeB"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="intro">
+                <ul class="main_list">
+                    <li class="main"><img src="./img/M_0.png" alt=""/></li>
+                    <li class="main1"><img src="./img/M_1.png" alt=""/></li>
+                    <li class="main2"><img src="./img/M_2.png" alt=""/></li>
+                    <li class="main3"><img src="./img/M_3.png" alt=""/></li>
+                    <li class="main4"><img src="./img/M_4.png" alt=""/></li>
+                </ul>
+            </div>
+            <div class="skill">
+                <!-- <section class="skl1">
+                    <h5>Said the blue Caterpillar</h5><br/>
+                    <h4>Who are you?</h4>
+                    <div class="smoBox">
+                        <p class="smogg1"></p>
+                        <p class="smogg2"></p>
+                        <p class="smogg3"></p>
+                        <p class="smogg4"></p>
+                    </div>
+                </section> -->
+                <!-- <section class="skl2">
+                    <div class="tBox">
+                        <h3><span>섬세하고</span><span>빠르게</span></h3>
+                        <h2><i>I'm </i><span>UI/UX Developer</span></h2>
+                        <p class="st">UI/UX 개발자</p>
+                    </div>
+                    <p class="cirBg"></p>
+                </section> -->
+                <!-- <section class="skl3">
+                    <p class="pbg"></p>
+                    <div class="profile">
+                        <dl>
+                            <dt>KEY WORD</dt>
+                            <dd>#섬세함 #순발력 #지구력 #강인함 #강한책임감 #침착함 #이성적 #긍정 #웃는얼굴 #호응 #집중력 #창의력 #친절함 #융통성 #협조적 #열린생각 #존중 #배려 #도움 #손재주 #손그림 #시각디자인전공 #미술태생 #배움 #일벌레 #호기심 #승부사 #자신감 #미래지향적 #동물애호가 #대형견1 #고양이2</dd>
+                        </dl>
+                    </div>
+                    <h3>
+                        <p>
+                            <img src="./img/N.svg" alt="N"/>
+                            <img src="./img/A.svg" alt="A"/>
+                            <img src="./img/M.svg" alt="M"/>
+                        </p>
+                        <p>
+                            <img src="./img/D.svg" alt="D"/>
+                            <img src="./img/A.svg" alt="A"/>
+                            <img src="./img/H.svg" alt="H"/>
+                            <img src="./img/Y.svg" alt="Y"/>
+                            <img src="./img/E.svg" alt="E"/>
+                            <img src="./img/O.svg" alt="O"/>
+                            <img src="./img/N.svg" alt="N"/>
+                        </p>
+                    </h3>
+                    <p class="p_year">1995 09 01 ~</p>
+                    <p class="p_tx">시각디자인전공 출신입니다. 특출난 손재주와 눈썰미를 가진 다재다능한 UI/UX Developer. IT업계에서의 근무 경험을 갖고있으며,<br/>현재 Junior Front Developer가 될 모든 준비를 마쳤습니다.</p>
+                </section> -->
+                <!-- <section id="skl4" class="skl4">
+                    <div class="s4L">
+                        <dl class="s4L1">
+                            <dt>WORK EXPERIENCE</dt>
+                            <dd>
+                                <p>총 약 2년의 경험</p>
+                                <ul>
+                                    <li>
+                                        <h5>주식회사 FSKorea</h5>
+                                        <p>IT사업부 디자인팀 대리 | 02.2019 - 06.2020</p>
+                                        <ul>
+                                            <li>/ 웹디자인 및 퍼블리싱, 프론트엔드 개발, 앱디자인</li>
+                                            <li>/ 기업 브랜딩 디자인, BX, Ci 디자인</li>
+                                            <li>/ 마케팅 운영 및 계약 진행, 마케팅 소스 디자인</li>
+                                        </ul>
+                                        <p>주요직무 : 시각디자인, 사이트운영, 퍼블리싱, 프론트엔드, BX디자인, 마케팅, 영상디자인</p>
+                                    </li>
+                                    <li>
+                                        <h5>CSLab</h5>
+                                        <p>콘텐츠사업부 사원 | 07.2018 - 01.2019</p>
+                                        <ul>
+                                            <li>/ (Adobe Animate)영상 콘텐츠 컨셉디자인 및 제작</li>
+                                        </ul>
+                                        <p>주요직무 : 2D, 플래쉬, 교육플레시 영상, 교육콘텐츠, 동화디자인, 애니메이션, 플래시캐릭터</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="s4L2">
+                            <dt>INTERNATIONAL ACTIVITY</dt>
+                            <dd>
+                                <h5>교생실습(미술)</h5>
+                                <p>경산여자고등학교 | 05.2017 - 06.2017</p>
+                                <h5>교육봉사</h5>
+                                <p>웃음꽃지역아동센터 | 05.2016 - 06.2016</p>
+                            </dd>
+                        </dl>
+                        <dl class="s4L3">
+                            <dt>EDUCATION</dt>
+                            <dd><p>DaeguHaanyUniversity_4년제 학사 졸업</p><span>2014 - 2018</span>
+                                <p>시각디자인전공(+교직이수)</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="s4R">
+                        <dl class="s4L4">
+                            <dt>SOFTWARE SKILL</dt>
+                            <dd>
+                                <ul>
+                                    <li>Adobe XD</li>
+                                    <li>Adobe illustrator</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Adobe Premiere</li>
+                                    <li>Adobe After Effects</li>
+                                    <li>Adobe Animate</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="s4L5">
+                            <dt>PROGRAMING LANGUAGE</dt>
+                            <dd>
+                                <ul>
+                                    <li>HTML, HTML5</li>
+                                    <li>CSS, CSS3</li>
+                                    <li>jQuery</li>
+                                    <li>javascript</li>
+                                    <li>React</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="s4L6">
+                            <dt>LICENSE</dt>
+                            <dd>
+                                <ul>
+                                    <li><p>중등학교 2급 정교사(디자인.공예)</p><span>2018.07</span></li>
+                                    <li><p>웹디자인기능사</p><span>2020.12</span></li>
+                                    <li><p>컴퓨터그래픽운용기능사</p><span>2020.12</span></li>
+                                    <li><p>ACA Photoshop CS6</p><span>2014.12</span></li>
+                                    <li><p>MOS PowerPoint 2010</p><span>2014.06</span></li>
+                                    <li><p>MOS Excel 2010 Expert</p><span>2014.06</span></li>
+                                    <li><p>CPR(심폐소생술)</p><span>2017.04</span></li>
+                                    <li><p>1종보통운전면허</p><span>2015.09</span></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </section> -->
+            </div>
+        </div>
+    </aside>
+    <content>
+        <div id="subP" class="content1">
+            <div id="mov">
+                <section class="sec sec1 last">
+                    <div class="sec_main">
+                        <div class="moc">
+                            <em class="mac mac2"></em><i class="page page2"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="mac"></em><i class="page"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="mac mac3"></em><i class="page page3"></i>
+                        </div>
+                        <div class="txtBox">
+                            <h3>Web Standard Essence verify</h3>
+                            <h2><span>Samsung</span>electro mechanics</h2>
+                            <dl>
+                                <dt>About</dt>
+                                <dd>웹콘텐츠 접근성 지침과 웹 표준을 준수하여 웹페이지를 제작하였습니다.<br/>
+                                    또한 크로스 브라우징 검사를 완료하여 IE8 - IE11, FIREFOX, CHROME 등 웹브라우저에서 동일한 웹페이지를 볼 수 있습니다.<br/>
+                                    ‘Web Standard Essence verify’ 버튼을 클릭하면 관련 검사의 결과물을 확인하실 수 있습니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>Language</dt>
+                                <dd>HTML5, CSS3, jQuery</dd>
+                            </dl>
+                            <span class="visit"><a class="noLk" href="http://namdahyeon.dothome.co.kr/ss_electro" onclick="window.open(this.href); return false">Visit the site</a></span>
+                            <span class="visit"><a class="noLk" href="web_std.html" onclick="window.open(this.href); return false">Web Standard Essence verify</a></span>
+                        </div>
+                    </div>
+                    <div class="sec_bg">
+                        <em class="bg1"></em>
+                        <em class="bg2"></em>
+                        <div class="bg_bot">
+                            <em class="bg3"></em>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec2">
+                    <div class="sec_main">
+                        <div class="moc">
+                            <em class="mac"></em><i class="page"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="tab"></em><i class="pageT"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="mob"></em><i class="pageM"></i>
+                        </div>
+                        <div class="txtBox">
+                            <h3>Responsive Web site</h3>
+                            <h2>CJone</h2>
+                            <dl>
+                                <dt>About</dt>
+                                <dd>반응형웹으로 구현한 CJone웹사이트입니다.<br/>
+                                    미디어쿼리를 이용하여 PC, 태블릿과 모바일에서 자동으로 해상도와 레이아웃이 변경됩니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>Language</dt>
+                                <dd>HTML5, CSS3, jQuery</dd>
+                            </dl>
+                            <dl>
+                                <dt>Effect</dt>
+                                <dd>transition, animation</dd>
+                            </dl>
+                            <span class="visit"><a class="noLk" href="http://namdahyeon.dothome.co.kr/CJone" onclick="window.open(this.href); return false">Visit the site</a></span>
+                        </div>
+                    </div>
+                    <div class="sec_bg">
+                        <em class="bg1"></em>
+                        <em class="bg2"></em>
+                        <div class="bg_bot">
+                            <em class="bg3"></em>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec3">
+                    <div class="sec_main">
+                        <div class="moc">
+                            <em class="nob"></em><i class="pageN"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="mob"></em><i class="pageM"></i>
+                        </div>
+                        <div class="txtBox">
+                            <h3>UI/UX Application</h3>
+                            <h2>Yangchgee</h2>
+                            <dl>
+                                <dt>About</dt>
+                                <dd>기획부터 디자인 코딩까지 A-Z작업을 한 양치케어 전문 어플리케이션입니다.<br/>
+                                    양치가 연상되는 네이밍 ‘양치기’와 깔끔함, 라운드를 컨셉으로 디자인을 하였습니다. 깨끗한 거품과 같은 털을 가진 양 캐릭터가 주요 포인트입니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>Language</dt>
+                                <dd>HTML5, CSS3, jQuery, javascript</dd>
+                            </dl>
+                            <dl>
+                                <dt>Effect</dt>
+                                <dd>Transition, animation, SVG, flex box</dd>
+                            </dl>
+                            <dl>
+                                <dt>technique</dt>
+                                <dd>Planning, Design, Cording</dd>
+                            </dl>
+                            <span class="visit"><a class="noLk" href="http://namdahyeon.dothome.co.kr/ycg_lend" onclick="window.open(this.href); return false">Visit the Landing page</a></span>
+                            <span class="visit"><a class="noLk" href="#" onclick="window.open('http://namdahyeon.dothome.co.kr/ycgApp', '_blank', 'width=375 height=812')">Visit the App</a></span>
+                        </div>
+                    </div>
+                    <div class="sec_bg">
+                        <em class="bg1"></em>
+                        <em class="bg2"></em>
+                        <div class="bg_bot">
+                            <em class="bg3"></em>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec4">
+                    <div class="sec_main">
+                        <div class="moc">
+                            <em class="mac"></em><i class="page"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="nob"></em><i class="pageN"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="tab"></em><i class="pageT"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="mob"></em><i class="pageM"></i>
+                        </div>
+                        <div class="txtBox">
+                            <h3>Renewal Responsive Web design</h3>
+                            <h2>ENEX</h2>
+                            <dl>
+                                <dt>About</dt>
+                                <dd>‘에넥스’기업의 홈페이지를 리뉴얼한 반응형 웹 디자인입니다.<br/>
+                                    에넥스의 상징적인 색상을 어우러지게 사용하였으며, 로고에서 찾아낸 사선 이미지를 특징으로 만들어낸 디자인입니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>Tool</dt>
+                                <dd>AdobeXD</dd>
+                            </dl>
+                            <dl>
+                                <dt>technique</dt>
+                                <dd>Planning, Renewal design</dd>
+                            </dl>
+                            <span class="visit"><a class="noLk" href="enex_lend.html" onclick="window.open(this.href); return false">Visit the Landing page</a></span>
+                            <span class="visit"><a class="noLk" href="enex_web.html" onclick="window.open(this.href); return false">View the Design</a></span>
+                        </div>
+                    </div>
+                    <div class="sec_bg">
+                        <em class="bg1"></em>
+                        <em class="bg2"></em>
+                        <div class="bg_bot">
+                            <em class="bg3"></em>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec5">
+                    <div class="sec_main">
+                        <div class="moc">
+                            <div class="emoji emoji_like">
+                                <div class="emoji_hand">
+                                    <div class="emoji_thumb"></div>
+                                </div>
+                            </div>
+                            <div class="emoji emoji_love">
+                                <div class="emoji_heart"></div>
+                            </div>
+                            <div class="emoji emoji_haha">
+                                <dlv class="emoji_face">
+                                    <div class="emoji_eyes"></div>
+                                    <div class="emoji_mouth">
+                                        <div class="emoji_tongue"></div>
+                                    </div>
+                                </dlv>
+                            </div>
+                            <div class="emoji emoji_yay">
+                                <div class="emoji_face">
+                                    <div class="emoji_eyebrows"></div>
+                                    <div class="emoji_mouth"></div>
+                                </div>
+                            </div>
+                            <div class="emoji emoji_wow">
+                                <div class="emoji_face">
+                                    <div class="emoji_eyebrows"></div>
+                                    <div class="emoji_eyes"></div>
+                                    <div class="emoji_tongue"></div>
+                                </div>
+                            </div>
+                            <div class="emoji emoji_sad">
+                                <div class="emoji_face">
+                                    <div class="emoji_eyebrows"></div>
+                                    <div class="emoji_eyes"></div>
+                                    <div class="emoji_mouth"></div>
+                                </div>
+                            </div>
+                            <div class="emoji emoji_angry">
+                                <div class="emoji_face">
+                                    <div class="emoji_eyebrows"></div>
+                                    <div class="emoji_eyes"></div>
+                                    <div class="emoji_mouth"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="moc">
+                            <div class="ryan">
+                                <div class="ear"></div>
+                                
+                                <div class="face">
+                                   <div class="eyebrow"></div>
+                                   <div class="Eye"></div>
+                                   <div class="nose"></div>
+                                   <div class="mouth"></div>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="txtBox">
+                            <h3>Pure css animation</h3>
+                            <h2>Pure CSS</h2>
+                            <dl>
+                                <dt>About</dt>
+                                <dd>오직 Pure CSS로 구현된 모션 이모티콘입니다.<br/>
+                                    hover하면 움직이는 라이언과 애니메이션으로 반복적인 움직임을 보이는 페이스북 이모티콘입니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>Language</dt>
+                                <dd>HTML5, CSS3</dd>
+                            </dl>
+                            <dl>
+                                <dt>Effect</dt>
+                                <dd>Transition, animation</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="sec_bg">
+                        <em class="bg1"></em>
+                        <em class="bg2"></em>
+                        <div class="bg_bot">
+                            <em class="bg3"></em>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec6">
+                    <div class="sec_main">
+                        <div class="moc">
+                            <em class="mob1"></em><i class="page1"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="mob2"></em><i class="page2"></i>
+                        </div>
+                        <div class="moc">
+                            <em class="mob3"></em><i class="page3"></i>
+                        </div>
+                        <div class="txtBox">
+                            <h3>Frontend using React.js. SPA</h3>
+                            <h2>Kakao Tolk</h2>
+                            <dl>
+                                <dt>About</dt>
+                                <dd>Kakao Tolk을 React와 반응형 Flex Box를 사용하여 github에 배포하였습니다.<br/>
+                                    프론트엔드 기술이 접목된 작업입니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>Language</dt>
+                                <dd>HTML5, CSS3, javascript, React.js</dd>
+                            </dl>
+                            <dl>
+                                <dt>Effect</dt>
+                                <dd>Flex box, git, gitHub, Ajax, Hook, Axios, Router, SPA, Function type components.</dd>
+                            </dl>
+                            <span class="visit"><a class="noLk" href="#" onclick="window.open('http://namdahyeon.dothome.co.kr/kakao', '_blank', 'width=375 height=812')">View the Flexbox</a></span>
+                            <span class="visit"><a class="noLk" href="#" onclick="window.open('https://namdahyeon.github.io/kakao-app/', '_blank', 'width=375 height=812')">View the React</a></span>
+                        </div>
+                    </div>
+                    <div class="sec_bg">
+                        <em class="bg1"></em>
+                        <em class="bg2"></em>
+                        <div class="bg_bot">
+                            <em class="bg3"></em>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="con_bottom">
+                <h4>work list<span>Please click slowly :)</span></h4>
+                <ul id="list">
+                    <li class="on" onclick="work1();"><a class="noLk" href="#"><span>삼성전기</span></a></li>
+                    <li class="" onclick="work2();"><a class="noLk" href="#"><span>CJone</span></a></li>
+                    <li class="" onclick="work3();"><a class="noLk" href="#"><span>Yangchigee</span></a></li>
+                    <li class="" onclick="work4();"><a class="noLk" href="#"><span>ENEX</span></a></li>
+                    <li class="" onclick="work5();"><a class="noLk" href="#"><span>pureCSS</span></a></li>
+                    <li class="" onclick="work6();"><a class="noLk" href="#"><span>kakaoTolk</span></a></li>
+                </ul>
+                <strong onclick="cotc_open();">Contact</strong>
+                <div class="cont">
+                    <ul>
+                        <li class="prev" onclick="prv();"><a class="noLk" href="#">prev</a></li>
+                        <li class="stop" id="st" onclick="stp();"><a class="noLk" href="#">stop</a></li>
+                        <li class="next" onclick="nxt();"><a class="noLk" href="#">next</a></li>
+                    </ul>
+                    <p>
+                        <span>Portfolio</span>
+                        <span>nam dahyeon</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <div class="cotc_tBox">
+                <h2>Contact</h2>
+                <p>흥미롭게 보셨다면 메일을 남겨주세요 :)</p>
+                <div>
+                    <p>P 010-9823-2776</p>
+                    <p>M namssi95@naver.com</p>
+                </div>
+                <ul>
+                    <li><a class="noLk" href="https://blog.naver.com/namssi95" onclick="window.open(this.href); return false"><i class="fas fa-blog"></i></a></li>
+                    <li><a class="noLk" href="https://github.com/namdahyeon" onclick="window.open(this.href); return false"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="cotc_bg">
+                <p class="cotc_cir0"></p>
+                <p class="cotc_cir1"></p>
+                <p class="cotc_cir">
+                    <span class="butt2"></span>
+                    <span class="butt3"></span>
+                </p>
+                <p class="butt1"></p>
+            </div>
+            <p onclick="cotc_clese();" class="cotc_back"></p>
+        </div>
+    </content>
+    <div class="bigsereenText">
+        <span>Please make your screen PC :)</span>
+    </div>
+</body>
+</html>

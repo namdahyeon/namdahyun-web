@@ -1,0 +1,72 @@
+@import url(reset.css);
+@import url(globals.css);
+
+@font-face { font-family:appleL; src:url('../font/AppleSDGothicNeoL.ttf'); }
+@font-face { font-family:appleM; src:url('../font/AppleSDGothicNeoM.ttf'); }
+@font-face { font-family:appleB; src:url('../font/AppleSDGothicNeoB.ttf'); }
+
+
+/* common */
+body { width:100%; font-size:14px; font-family:appleM; line-height:1; background-color:#a1c0d6; }
+a { text-decoration:none; color:#222; }
+
+/* main.css */
+/* layout */
+body>header { z-index:10; position:fixed; top:0; width:100%; padding:5px 10px 15px; border:solid 1px rgba(0,0,0,.1); box-sizing:border-box; }
+    body>header>.header_T { display:flex; justify-content:space-between; align-items:center; font-size:12px; margin-bottom:15px; }
+    body>header>.header_B { display:flex; justify-content:space-between; align-items:center; margin:0 10px; font-size:16px; }
+main { padding-top:64px; }
+
+
+
+
+/* header */
+.header_T>ul { display:flex; flex:1; }
+.header_T>ul li { margin-right:4px; }
+.header_T>ul li>span { margin-right:3px; }
+.header_T>ul li:last-of-type { margin-right:0; }
+.header_T>span { flex:1; text-align:center; }
+.header_T>ul:last-of-type { justify-content:flex-end; }
+
+.header_B>span { flex:1; }
+.header_B>span:first-of-type { font-size:1.333em; }
+.header_B>span:nth-of-type(2) { text-align:center; }
+.header_B>span:last-of-type { flex:1; text-align:right; }
+.header_B>span:last-of-type i:first-of-type { margin-right:4px; }
+
+
+/* main */
+main>p { margin-top:15px; text-align:center; color:rgba(0,0,0,.5); }
+
+main>div { display:flex; margin:0 5px 10px; }
+main>div em { font-style:normal; font-size:11px; color:rgba(0,0,0,.5); }
+main>div p { display:inline-block; padding:10px 5px; margin:0 5px 10px; border-radius:5px; font-size:18px; }
+
+main>.my_chat { justify-content:flex-end; }
+main>.my_chat em { align-self:flex-end; }
+main>.my_chat .m_chat { display:flex; flex-direction:column; }
+main>.my_chat p { align-self:flex-end; background-color:#ffe934; }
+
+main>.user_chat img { height:35px; border-radius:50%; margin-right:10px; }
+main>.user_chat .u_chat { display:flex; flex-direction:column; }
+main>.user_chat h3  { padding:0 5px; margin-bottom:10px; font-size:13px; font-family:appleB; }
+main>.user_chat p { align-self:flex-start; background-color:#fff; }
+main>.user_chat em { align-self:flex-end; }
+
+body>section { position:fixed; bottom:0; display:flex; justify-content:space-between; align-items:center; width:100%; padding:5px; box-sizing:border-box; background-color:#eee; }
+body>section i { font-size:1.333em; color:#b4b4b4; }
+
+body>section>i { margin-left:5px; }
+body>section .keybord { display:flex; justify-content:flex-end;  width:100%; }
+body>section input { width:70%; padding:10px; }
+body>section .keybord i:first-of-type { position:absolute; right:45px; top:50%; transform:translateY(-50%); }
+body>section .keybord i:last-of-type { padding:10px; background-color:#ffe934; color:#523737; }
+
+
+/* bigsereenText */
+.bigsereenText { display:none; }
+
+@media (min-width:530px) { /* 스마트폰 ~767*/
+    .bigsereenText { z-index:30; position:fixed; display:flex; justify-content:center; left:0; top:0; align-items:center; width:100%; height:100%; background-color:#ffe94a; }
+    .bigsereenText span { font-family:appleB; font-size:30px; color:#fff; }
+}

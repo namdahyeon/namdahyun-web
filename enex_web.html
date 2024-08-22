@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>ENEX web Design</title>
+    <link type="text/css" href="./css/reset.css" rel="stylesheet">
+    <link type="text/css" href="./css/enex_web.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/subpage.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="gnb" onclick="mainMenu();"><a href="#">gnb</a></p>
+        <h1 class="logo">DHlogo</h1>
+        <span class="int">ENEX web Design</span>
+    </header>
+    <div id="gnb" class="gnbBox">
+        <div class="dd">
+            <div class="gnbWrap">
+                <ul>
+                    <li onclick="cotc_clese();"><a class="noLk subM1" href="#">Intro</a></li>
+                    <li onclick="cotc_clese();"><a class="noLk subM2" href="#">Introduce</a></li>
+                    <li onclick="cotc_clese();"><a class="noLk subM3" href="#">Skill</a></li>
+                    <li onclick="cotc_clese();"><a class="noLk subM4" href="#">Work list</a></li>
+                    <li onclick="cotc_open();"><a class="noLk subM5" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <content id=con class="pc">
+        <div class="navi">
+            <ul>
+                <li onclick="Pc();"><i class="fas fa-desktop"></i><span>PC</span></li>
+                <li onclick="Tab();"><i class="fas fa-tablet-alt"></i><span>Tablet</span></li>
+                <li onclick="Mob();"><i class="fas fa-mobile-alt"></i><span>Mobile</span></li>
+            </ul>
+            <p>navi</p>
+        </div>
+        <section>
+        </section>
+    </content>
+</body>
+</html>

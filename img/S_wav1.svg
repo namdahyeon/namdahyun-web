@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6713.746" height="196.441" viewBox="0 0 6713.746 196.441">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b55c8d" stop-opacity="0.2"/>
+      <stop offset="0.567" stop-color="#b55c8d"/>
+      <stop offset="1" stop-color="#b55c8d"/>
+    </linearGradient>
+  </defs>
+  <path id="Wav4" data-name="Wav4" d="M7347,7533.214v106.744l6713.746-23.311s-252.922-122.83-660.34-142.6c-233.94-11.352-716.783,57.715-1114.6,53.6s-737.635-48.145-1212.574-53.6-850.552,43.752-1221.624,23.932-437.787-61.624-791.707-53.407-693.77,54.722-900.367,72.889-300.69-24.4-503.731-20.741S7347,7533.214,7347,7533.214Z" transform="translate(-7347 -7443.517)" opacity="0.4" fill="url(#linear-gradient)" style="mix-blend-mode: darken;isolation: isolate"/>
+</svg>

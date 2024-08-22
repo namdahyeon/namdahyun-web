@@ -1,0 +1,55 @@
+@import url(reset.css);
+@import url(globals.css);
+
+@font-face { font-family:appleL; src:url('../font/AppleSDGothicNeoL.ttf'); }
+@font-face { font-family:appleM; src:url('../font/AppleSDGothicNeoM.ttf'); }
+@font-face { font-family:appleB; src:url('../font/AppleSDGothicNeoB.ttf'); }
+
+
+/* common */
+body { width:100%; font-size:14px; font-family:appleM; line-height:1; }
+a { text-decoration:none; color:#222; }
+
+/* main.css */
+/* layout */
+body>header { z-index:10; position:fixed; top:0; width:100%; box-sizing:border-box; padding:5px 10px 15px; }
+    body>header>.header_T { display:flex; justify-content:space-between; align-items:center; font-size:12px; margin-bottom:15px; }
+    body>header>.header_B { display:flex; justify-content:space-between; align-items:center; margin:0 10px; font-size:16px; }
+main { background:url(../images/bg_default.png)no-repeat 50% -60px; background-size:cover; }
+
+
+/* header */
+body>header i { color:#fff; }
+body>header span { color:#fff; }
+
+.header_T>ul { display:flex; flex:1; }
+.header_T>ul li { margin-right:4px; }
+.header_T>ul li>span { margin-right:3px; }
+.header_T>ul li:last-of-type { margin-right:0; }
+.header_T>span { flex:1; text-align:center; }
+.header_T>ul:last-of-type { justify-content:flex-end; }
+
+.header_B>span { flex:1; font-size:1.333em; }
+.header_B>i { flex:1; text-align:right; }
+
+
+/* main */
+main header { z-index:5; position:relative; bottom:-60px; display:flex; flex-direction:column; justify-content:flex-end; height:65vh; text-align:center; }
+main header p img { width:100px; border-radius:50%; margin-bottom:10px; }
+main header h3 { font-size:16px; font-weight:normal; }
+
+main section { display:flex; flex-direction:column; align-items:center; padding-top:60px; background-color:#fff; }
+main section input { padding:5px; margin:15px 0 20px; }
+main section dl { display:flex; }
+main section dl dd { display:flex; flex-direction:column; align-items:center; font-size:12px; font-family:AppleB; }
+main section dl dd:first-of-type { margin-right:15px; }
+main section dl dd i { padding:15px; border-radius:50%; margin-bottom:15px; background-color:#f2f2f2; font-size:1.333em; color:#523737; }
+
+
+/* bigsereenText */
+.bigsereenText { display:none; }
+
+@media (min-width:530px) { /* 스마트폰 ~767*/
+    .bigsereenText { z-index:30; position:fixed; display:flex; justify-content: center; left:0; top:0; align-items:center; width:100%; height:100%; background-color:#ffe94a; }
+    .bigsereenText span { font-family:appleB; font-size:30px; color:#fff; }
+}
